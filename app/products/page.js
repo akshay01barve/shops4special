@@ -132,7 +132,7 @@ const Products = () => {
       <TopHeader/>
       <Header />
 
-      <div className='p-3 bg-[#5ce0d8]'>
+      <div className='p-3 bg-gradient-to-r from-[#f49022] to-[#ed5582]npm'>
         <div>
           <h1 className='text-3xl font-extrabold text-[#fefefe] underline'>Our Products</h1>
         </div>

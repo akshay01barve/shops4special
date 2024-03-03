@@ -3,6 +3,7 @@ import "./globals.css";
 import * as React from "react";
 
 import { ThemeProvider } from "@material-tailwind/react";
+import {NextUIProvider} from "@nextui-org/react";
 
 export default function RootLayout({ children }) {
   return (
@@ -13,9 +14,11 @@ export default function RootLayout({ children }) {
             <div className="">
               <main>
                 <div className="">
+                <NextUIProvider>
                   <ThemeProvider>
                     {children}
                   </ThemeProvider>
+                  </NextUIProvider>
                 </div>
               </main>
             </div>
