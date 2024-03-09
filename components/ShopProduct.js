@@ -1,71 +1,64 @@
 import React from "react";
 import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
+import {Button} from "@nextui-org/react";
+import Link from "next/link";
 
 const ShopProduct =()=> {
   const list = [
     {
-      title: "Orange",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpg",
-      price: "$5.50",
+      title: "AUDIO ASSISTANTS",
+      img: "./product1.jpg",
+      
     },
     {
-      title: "Tangerine",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpg",
-      price: "$3.00",
+      title: "EMBOSSERS",
+      img: "./product2.jpg",
+    
     },
     {
-      title: "Raspberry",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpg",
-      price: "$10.00",
+      title: "MAGNIFIER",
+      img: "./product4 (1).png",
+      
     },
     {
-      title: "Lemon",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpg",
-      price: "$5.30",
+      title: "BRAILLE EQUIPMENTS",
+      img: "./product4 (2).png",
+     
     },
-    {
-      title: "Avocado",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpg",
-      price: "$15.70",
-    },
-    {
-      title: "Lemon 2",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpg",
-      price: "$8.00",
-    },
-    {
-      title: "Banana",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpg",
-      price: "$7.50",
-    },
-    {
-      title: "Watermelon",
-      img: "https://i.pinimg.com/736x/d5/08/9b/d5089b1c701419530107dafe7dbbe5c5.jpgg",
-      price: "$12.20",
-    },
+
+  
   ];
 
   return (
-    <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
+   <div>
+     <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
       {list.map((item, index) => (
-        <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
+        <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")} className="md:w-[250px]">
           <CardBody className="overflow-visible p-0">
             <Image
               shadow="sm"
               radius="lg"
               width="100%"
               alt={item.title}
-              className="w-full object-cover h-[140px]"
+              className="w-full object-cover h-[140px] md:h-[160px] "
               src={item.img}
             />
           </CardBody>
           <CardFooter className="text-small justify-between">
-            <b>{item.title}</b>
-            <p className="text-default-500">{item.price}</p>
+            <b className="flex justify-center">{item.title}</b>
+            
           </CardFooter>
         </Card>
       ))}
+
+      
     </div>
+    <div className="flex justify-center mt-4">
+      <Button color="primary" variant="shadow" size="lg">
+       <Link href="/products"> View More</Link>
+      </Button> 
+      </div>
+   </div>
   );
 }
 
