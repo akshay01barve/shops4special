@@ -7,10 +7,23 @@ const Header = ()=> {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Products",
-    "Contact Us",
-    "About Us",
-    "Log Out",
+   {
+    title:"Home",
+    link: "/"
+   },
+   {
+    title:"Products",
+    link: "/products"
+   },
+   {
+    title:"Abouts",
+    link: "/aboutus"
+   },
+   {
+    title:"Contact Us",
+    link: "/contactus"
+   },
+
   ];
 
   return (
@@ -27,6 +40,11 @@ const Header = ()=> {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarItem>
+          <Link color="foreground" href="/">
+            Home
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/products">
             Products
@@ -56,7 +74,7 @@ const Header = ()=> {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
+            {/* <Link
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
@@ -65,7 +83,10 @@ const Header = ()=> {
               size="lg"
             >
               {item}
-            </Link>
+            </Link> */}
+           <Link href={item.link} >
+            {item.title}
+           </Link>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
