@@ -6,9 +6,14 @@ const Section = () => {
     <div>
         <div className='  '>
            
-           <div className=' bg-[#11181f]  '>
-              <h2 className='text-3xl text-center text-[#fefefe] p-12'>Nearly half of visual impairment  can be treated or prevented</h2>
+           <div className=' bg-[#11181f] p-12  '>
+              <h2 className='md:text-3xl text-center text-[#fefefe] '>“A hero is an ordinary individual who finds the strength to persevere and endure in spite of overwhelming obstacles.”</h2>
+              
+              <h3 className='text-center md:text-xl text-white mt-[3px]'>— Christopher Reeve.</h3>
+             
+          
             </div>
+          
 
           
         </div>
