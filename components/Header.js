@@ -23,6 +23,10 @@ const Header = ()=> {
     title:"Contact Us",
     link: "/contactus"
    },
+   {
+    title:"Portfolio",
+    link: "/portfolio"
+   },
 
   ];
 
@@ -58,6 +62,11 @@ const Header = ()=> {
         <NavbarItem>
           <Link color="foreground" href="/contactus">
             Contact Us
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/portfolio">
+            Portfolio
           </Link>
         </NavbarItem>
       </NavbarContent>

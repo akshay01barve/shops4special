@@ -38,13 +38,14 @@ const Home = () => {
           <ShopProduct />
         </div>
 
-        <div>
-          <Achieved />
-        </div>
+       
 
         <div>
           <Section />
         </div>
+        {/* <div>
+          <Achieved />
+        </div> */}
 
         {/* <div>
           <StoriesChange />
