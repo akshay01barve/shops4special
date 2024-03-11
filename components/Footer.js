@@ -20,38 +20,26 @@ const currentYear = new Date().getFullYear();
  
 const FooterWithSocialLinks =()=> {
   return (
-    <footer className="relative w-full">
+    <div className="mt-4">
+      <footer className="relative w-full border p-2">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
-          Shop4Specials
-          </Typography>
-          <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title, items }) => (
-              <ul key={title}>
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="mb-3 font-medium opacity-40"
-                >
-                  {title}
-                </Typography>
-                {items.map((link) => (
-                  <li key={link}>
-                    <Typography
-                      as="a"
-                      href="#"
-                      color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
-                    >
-                      {link}
-                    </Typography>
-                  </li>
-                ))}
-              </ul>
-            ))}
+       <div className="md:flex md:flex-row md:justify-between ">
+        <div>
+          <div><h2 className="font-bold text-lg">SHOP4SPECIALS</h2></div>
+          <div className="w-[325px]">725, NAYAY KHAND-2, KALA PATTHAR ROAD, GAZIABAD, 201014, INDIA</div>
+        </div>
+        <div>
+          <div className="font-bold text-lg">If you have any questions, let us know.</div>
+          <div>info@shop4specials.com</div>
+          <div>(+91)9891745757</div>
+          </div>
+        <div>
+          <div className="font-bold text-lg">Distributer of</div>
+          <div>
+            <img src="./h.jpg"/>
           </div>
         </div>
+       </div>
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
@@ -108,6 +96,7 @@ const FooterWithSocialLinks =()=> {
         </div>
       </div>
     </footer>
+    </div>
   );
 }
 

@@ -10,6 +10,7 @@ import {
 } from "@material-tailwind/react";
 import Footer from '../../components/Footer'
 import TopHeader from '../../components/TopHeader';
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -171,7 +172,7 @@ const Products = () => {
       <Header />
       <div className='p-3'>
         <div className='flex flex-row justify-between'>
-          <div><h1 className='text-3xl font-extrabold underline'>Our Products</h1></div>
+          <div><h1 className='text-4xl font-extrabold '>Products</h1></div>
           <div>
             <select onChange={(e) => handleCategorySelect(parseInt(e.target.value))}>
               <option value="">Select Category</option>
@@ -184,7 +185,7 @@ const Products = () => {
         {sortedCategories.map((category) => (
           <div key={category.id}>
             <div className="mb-3">
-              <h2 className='text-center font-bold text-xl underline'>{category.name}</h2>
+              <h2 className='text-center font-bold text-3xl mt-9'>{category.name}</h2>
             </div>
             <div className='grid md:grid-cols-4 gap-4'>
               {category.products.map((product) => (
