@@ -4,11 +4,7 @@ const Vision = () => {
   return (
     <div>
         <div>
-            <h1>Shop4specials is a distributer of highly intuitive and intelligent solutions for people living with vision loss or visual impairment. From braille devices to audio asisstants to electronic magnifiers.
-
-Shop4specials help all users live independently and participate successfully in today’s world by distributing all type of visual impairment devices.
-
-Shop4Specials is a authorized distributer of Humanware products in the India and also distributes in neighbouring countries.</h1>
+            <h1>Shop4Specials is your trusted distributor, specializing in highly intuitive and intelligent solutions tailored for individuals living with vision loss or visual impairment. From cutting-edge braille devices to innovative audio assistants and advanced electronic magnifiers, we provide a comprehensive range of tools to enhance independence and facilitate successful participation in today’s world. As an authorized distributor of Humanware products in India, alongside serving neighboring countries, we are dedicated to ensuring accessibility and empowerment for all users. Discover the possibilities with Shop4Specials, your partner in overcoming visual challenges and embracing a more inclusive future.</h1>
         </div>
     </div>
   )
